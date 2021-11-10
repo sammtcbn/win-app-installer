@@ -4,10 +4,8 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set dlver=3.17
-set dlurl=https://github.com/pbatard/rufus/releases/download/v%dlver%
-set dlfn=rufus-%dlver%.exe
-set dlfullurl="%dlurl%/%dlfn%"
-set dlout=%dlfn%
+set ver=3.17
+set fn=rufus-%ver%.exe
+set url=https://github.com/pbatard/rufus/releases/download/v%ver%/%fn%
 
-call utils\curl-dl.bat "%dlfullurl%" %dlout%
+call utils\curl-dl.bat "%url%" %fn%

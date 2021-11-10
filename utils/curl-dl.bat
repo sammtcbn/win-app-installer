@@ -17,8 +17,9 @@ call "%curl_script_path%\folder-create.bat" %archivespath%
 
 curl -k --fail --output %archivespath%\%targetFileName% -L %url%
 if %ERRORLEVEL% neq 0 (
-    echo Fail to download %targetFileName%
-	exit /b 1
+  echo Fail to download %url%
+  timeout /t 5
+  exit /b 1
 )
 
 :bye
