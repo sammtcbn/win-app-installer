@@ -6,4 +6,4 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 set shortcut-filename=Brave.lnk
 
-call utils\desktop-file-remove.bat "%shortcut-filename%"
+call utils\desktop-file-remove.bat %shortcut-filename%

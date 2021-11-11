@@ -4,6 +4,9 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set shortcut-filename=Postman.lnk
+set ver=3.0.16
+set fn=vlc-%ver%-win64.exe
 
-call utils\desktop-file-remove.bat %shortcut-filename%
+%archivespath%\%fn% /L=1033 /S
+
+@rem refer to https://wiki.videolan.org/Documentation:Installing_VLC/

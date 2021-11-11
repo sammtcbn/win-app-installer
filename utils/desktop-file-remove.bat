@@ -1,5 +1,5 @@
 @echo off
-set targetFileName=%1
+set targetFileName=%*
 
 set targetPath="C:\Users\Public\Desktop\%targetFileName%"
 if exist %targetPath% (
