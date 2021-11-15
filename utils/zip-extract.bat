@@ -1,4 +1,5 @@
 @echo off
+set currpath=%cd%
 set zip_extract_script_path=%~dp0
 IF "%zip_extract_script_path:~-1%"=="\" SET zip_extract_script_path=%zip_extract_script_path:~0,-1%
 cd /d "%zip_extract_script_path%"
@@ -14,3 +15,5 @@ if exist "C:\Program Files\7-Zip\7z.exe" (
 ) else (
 	powershell -command "Expand-Archive -Force %zipfile% %destdir%"
 )
+
+cd /d "%currpath%"

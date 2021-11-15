@@ -1,4 +1,5 @@
 @echo off
+set currpath=%cd%
 set curl_script_path=%~dp0
 IF "%curl_script_path:~-1%"=="\" SET curl_script_path=%curl_script_path:~0,-1%
 cd /d "%curl_script_path%"
@@ -23,3 +24,4 @@ if %ERRORLEVEL% neq 0 (
 )
 
 :bye
+cd /d "%currpath%"
