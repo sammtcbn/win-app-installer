@@ -6,11 +6,11 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 WHERE nircmd
 if /I %ERRORLEVEL% NEQ 0 (
-    goto EOF
+    goto END
 )
 
 nircmd setsysvolume 0
 
-:EOF
+:END
 
 @rem refer to https://www.nirsoft.net/utils/nircmd.html

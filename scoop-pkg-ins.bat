@@ -4,13 +4,13 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-if "%~1"=="" goto :EOF
+if "%~1"=="" goto END
 
 WHERE scoop
 if /I %ERRORLEVEL% NEQ 0 (
-    goto EOF
+    goto END
 )
 
 scoop install %*
 
-:EOF
+:END

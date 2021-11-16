@@ -16,11 +16,11 @@ if /I %ERRORLEVEL% NEQ 0 (
         @rem file doesn't exist
 		echo refreshenv not found
 		timeout /t 2
-        goto :EOF
+        goto END
     )
 	
 ) else (
     refreshenv
 )
 
-:EOF
+:END

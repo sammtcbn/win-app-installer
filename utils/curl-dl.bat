@@ -10,7 +10,7 @@ set targetFileName=%2
 
 if exist %archivespath%\%targetFileName% (
   echo %targetFileName% exist in %archivespath%
-  goto :bye
+  goto END
 )
 
 cd "%curl_script_path%"
@@ -23,5 +23,5 @@ if %ERRORLEVEL% neq 0 (
   exit /b 1
 )
 
-:bye
+:END
 cd /d "%currpath%"

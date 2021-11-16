@@ -6,9 +6,9 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 WHERE scoop
 if /I %ERRORLEVEL% NEQ 0 (
-    goto EOF
+    goto END
 )
 
 scoop bucket add extras
 
-:EOF
+:END

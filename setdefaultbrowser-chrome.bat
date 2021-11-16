@@ -6,9 +6,9 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 WHERE SetDefaultBrowser
 if /I %ERRORLEVEL% NEQ 0 (
-    goto EOF
+    goto END
 )
 
 SetDefaultBrowser chrome
 
-:EOF
+:END

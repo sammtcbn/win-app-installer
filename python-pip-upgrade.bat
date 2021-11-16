@@ -13,4 +13,4 @@ if /I %ERRORLEVEL% NEQ 0 (
 	pip install --upgrade pip --user
 )
 
-:bye
+:END

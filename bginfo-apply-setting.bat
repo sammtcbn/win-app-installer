@@ -6,9 +6,9 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 WHERE bginfo64
 if /I %ERRORLEVEL% NEQ 0 (
-    goto EOF
+    goto END
 )
 
 bginfo64.exe "%currpath%\bginfo-setting.bgi" /timer:0 /nolicprompt /silent
 
-:EOF
+:END
