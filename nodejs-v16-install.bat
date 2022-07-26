@@ -4,7 +4,7 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set ver=16.13.0
+set ver=16.16.0
 set fn=node-v%ver%-x64.msi
 
 %archivespath%\%fn% /quiet
