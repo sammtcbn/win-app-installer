@@ -4,7 +4,7 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set ver=2.37.1
+set ver=2.40.0
 set fn=Git-%ver%-64-bit.exe
 set url=https://github.com/git-for-windows/git/releases/download/v%ver%.windows.1/%fn%
 
