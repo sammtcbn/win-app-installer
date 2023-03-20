@@ -6,6 +6,7 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 set ver=1.7.1
 set fn=mqttfx-%ver%-windows-x64.exe
-set url=http://jensd.de/apps/mqttfx/%ver%/%fn%
+@rem set url=http://jensd.de/apps/mqttfx/%ver%/%fn%
+set url=https://web.archive.org/web/20210928134701/https://www.jensd.de/apps/mqttfx/%ver%/%fn%
 
 call utils\curl-dl.bat "%url%" %fn%
