@@ -6,6 +6,6 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 set ver=17
 set fn=jdk-%ver%_windows-x64_bin.exe
-set url=https://download.oracle.com/java/%ver%/latest/%fn%
+set url=https://download.oracle.com/java/%ver%/archive/%fn%
 
 call utils\curl-dl.bat "%url%" %fn%
