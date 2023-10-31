@@ -4,7 +4,7 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set ver=3.11.4
+set ver=3.12.0
 set fn=python-%ver%-amd64.exe
 
 %archivespath%\%fn% /quiet PrependPath=1 Include_test=0
