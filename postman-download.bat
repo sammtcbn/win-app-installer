@@ -4,8 +4,8 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set ver=8.10.0
+set ver=10.19.7
 set fn=Postman-win64-%ver%-Setup.exe
-set url=https://dl.pstmn.io/download/version/%ver%/windows64
+set url=https://dl.pstmn.io/download/version/10.19.7/win64
 
 call utils\curl-dl.bat "%url%" %fn%
