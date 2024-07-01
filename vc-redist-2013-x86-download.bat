@@ -6,6 +6,6 @@ for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
 rem set ver=
 set fn=vc_redist-2013.x86.exe
-set url=https://download.visualstudio.microsoft.com/download/pr/10912113/5da66ddebb0ad32ebd4b922fd82e8e25/vcredist_x86.exe
+set url=https://aka.ms/highdpimfc2013x86enu
 
 call utils\curl-dl.bat "%url%" %fn%
