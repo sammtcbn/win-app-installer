@@ -4,7 +4,7 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set ver=1.59.0
+set ver=1.96.4
 set fn=VSCodeUserSetup-x64-%ver%.exe
 
 %archivespath%\%fn% /verysilent /suppressmsgboxes /NORESTART /MERGETASKS=!runcode
