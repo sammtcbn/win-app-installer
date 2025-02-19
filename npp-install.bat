@@ -4,7 +4,7 @@ if "%currpath:~-1%"=="\" set currpath=%currpath:~0,-1%
 cd /d "%currpath%"
 for /f "delims=" %%x in (utils\env.txt) do (set "%%x")
 
-set ver=8.7.5
+set ver=8.7.7
 set fn=npp.%ver%.Installer.x64.exe
 
 %archivespath%\%fn% /S
