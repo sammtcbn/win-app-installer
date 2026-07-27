@@ -10,7 +10,7 @@ If jdk is not installed in your system, please install it first as following ste
 * Add an Environment Variable named CLASSPATH and set it to .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
 * Edit Environment Variable named PATH and append ;%JAVA_HOME%\bin
 
-In solr-installer folder, run windows_install.bat as administrator.
+Run windows_install.bat as administrator.
 
 Solr will be installed at C:\solr
 
