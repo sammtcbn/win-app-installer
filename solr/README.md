@@ -1,4 +1,4 @@
-solr-installer
+solr installer
 
 This repository helps you install Solr 9.0.0 on Windows and run Solr as a Windows service.
 

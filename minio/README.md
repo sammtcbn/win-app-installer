@@ -1,4 +1,4 @@
-minio-installer
+minio installer
 
 This repository helps you install minio on Windows and run minio as a Windows service.
 
